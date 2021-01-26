@@ -1,0 +1,81 @@
+[epoch:1, batch: 2000] loss: 1.826
+[epoch:1, batch: 4000] loss: 1.543
+[epoch:1, batch: 6000] loss: 1.437
+[epoch:1, batch: 8000] loss: 1.334
+[epoch:1, batch:10000] loss: 1.288
+[epoch:1, batch:12000] loss: 1.212
+
+
+[epoch:2, batch: 2000] loss: 1.122
+[epoch:2, batch: 4000] loss: 1.112
+[epoch:2, batch: 6000] loss: 1.060
+[epoch:2, batch: 8000] loss: 1.042
+[epoch:2, batch:10000] loss: 1.032
+[epoch:2, batch:12000] loss: 1.004
+
+
+[epoch:3, batch: 2000] loss: 0.913
+[epoch:3, batch: 4000] loss: 0.906
+[epoch:3, batch: 6000] loss: 0.906
+[epoch:3, batch: 8000] loss: 0.872
+[epoch:3, batch:10000] loss: 0.848
+[epoch:3, batch:12000] loss: 0.845
+
+
+[epoch:4, batch: 2000] loss: 0.772
+[epoch:4, batch: 4000] loss: 0.753
+[epoch:4, batch: 6000] loss: 0.765
+[epoch:4, batch: 8000] loss: 0.740
+[epoch:4, batch:10000] loss: 0.767
+[epoch:4, batch:12000] loss: 0.730
+
+
+[epoch:5, batch: 2000] loss: 0.632
+[epoch:5, batch: 4000] loss: 0.643
+[epoch:5, batch: 6000] loss: 0.659
+[epoch:5, batch: 8000] loss: 0.633
+[epoch:5, batch:10000] loss: 0.629
+[epoch:5, batch:12000] loss: 0.655
+
+
+[epoch:6, batch: 2000] loss: 0.519
+[epoch:6, batch: 4000] loss: 0.512
+[epoch:6, batch: 6000] loss: 0.548
+[epoch:6, batch: 8000] loss: 0.540
+[epoch:6, batch:10000] loss: 0.572
+[epoch:6, batch:12000] loss: 0.544
+
+
+[epoch:7, batch: 2000] loss: 0.425
+[epoch:7, batch: 4000] loss: 0.424
+[epoch:7, batch: 6000] loss: 0.443
+[epoch:7, batch: 8000] loss: 0.441
+[epoch:7, batch:10000] loss: 0.451
+[epoch:7, batch:12000] loss: 0.458
+
+
+[epoch:8, batch: 2000] loss: 0.351
+[epoch:8, batch: 4000] loss: 0.350
+[epoch:8, batch: 6000] loss: 0.346
+[epoch:8, batch: 8000] loss: 0.335
+[epoch:8, batch:10000] loss: 0.351
+[epoch:8, batch:12000] loss: 0.368
+
+
+[epoch:9, batch: 2000] loss: 0.276
+[epoch:9, batch: 4000] loss: 0.244
+[epoch:9, batch: 6000] loss: 0.272
+[epoch:9, batch: 8000] loss: 0.268
+[epoch:9, batch:10000] loss: 0.288
+[epoch:9, batch:12000] loss: 0.287
+
+
+[epoch:10, batch: 2000] loss: 0.203
+[epoch:10, batch: 4000] loss: 0.206
+[epoch:10, batch: 6000] loss: 0.211
+[epoch:10, batch: 8000] loss: 0.212
+[epoch:10, batch:10000] loss: 0.223
+[epoch:10, batch:12000] loss: 0.227
+
+
+Classification Accuracy: 72 %

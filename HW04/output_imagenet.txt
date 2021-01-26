@@ -1,0 +1,12 @@
+[epoch:1] loss: 1.349
+[epoch:2] loss: 1.356
+[epoch:3] loss: 1.354
+[epoch:4] loss: 1.172
+[epoch:5] loss: 1.116
+[epoch:6] loss: 1.103
+[epoch:7] loss: 1.082
+[epoch:8] loss: 1.057
+[epoch:9] loss: 1.031
+[epoch:10] loss: 0.974
+
+Overall accuracy of the network on the 10000 test images: 56 %

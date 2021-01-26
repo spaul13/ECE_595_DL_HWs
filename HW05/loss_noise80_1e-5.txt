@@ -1,0 +1,344 @@
+printing out the model:
+LOADnet2(
+  (conv): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (skip64): SkipBlock(
+    (convo): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (bn): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (skip64ds): SkipBlock(
+    (convo): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (bn): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (downsampler): Conv2d(64, 64, kernel_size=(1, 1), stride=(2, 2))
+  )
+  (skip64to128): SkipBlock(
+    (convo): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (skip128): SkipBlock(
+    (convo): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (skip128ds): SkipBlock(
+    (convo): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (bn): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (downsampler): Conv2d(128, 128, kernel_size=(1, 1), stride=(2, 2))
+  )
+  (fc1): Linear(in_features=2048, out_features=1000, bias=True)
+  (fc2): Linear(in_features=1000, out_features=5, bias=True)
+  (conv_seqn): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): ReLU(inplace)
+  )
+  (fc_seqn): Sequential(
+    (0): Linear(in_features=16384, out_features=1024, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU(inplace)
+    (4): Linear(in_features=512, out_features=4, bias=True)
+  )
+)
+
+
+
+a summary of input/output for the model:
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,792
+         MaxPool2d-2           [-1, 64, 16, 16]               0
+            Conv2d-3           [-1, 64, 16, 16]          36,928
+       BatchNorm2d-4           [-1, 64, 16, 16]             128
+            Conv2d-5           [-1, 64, 16, 16]          36,928
+       BatchNorm2d-6           [-1, 64, 16, 16]             128
+         SkipBlock-7           [-1, 64, 16, 16]               0
+            Conv2d-8           [-1, 64, 16, 16]          36,928
+       BatchNorm2d-9           [-1, 64, 16, 16]             128
+           Conv2d-10           [-1, 64, 16, 16]          36,928
+      BatchNorm2d-11           [-1, 64, 16, 16]             128
+        SkipBlock-12           [-1, 64, 16, 16]               0
+           Conv2d-13           [-1, 64, 16, 16]          36,928
+      BatchNorm2d-14           [-1, 64, 16, 16]             128
+           Conv2d-15           [-1, 64, 16, 16]          36,928
+      BatchNorm2d-16           [-1, 64, 16, 16]             128
+        SkipBlock-17           [-1, 64, 16, 16]               0
+           Conv2d-18           [-1, 64, 16, 16]          36,928
+      BatchNorm2d-19           [-1, 64, 16, 16]             128
+           Conv2d-20           [-1, 64, 16, 16]          36,928
+      BatchNorm2d-21           [-1, 64, 16, 16]             128
+        SkipBlock-22           [-1, 64, 16, 16]               0
+           Conv2d-23           [-1, 64, 16, 16]          36,928
+      BatchNorm2d-24           [-1, 64, 16, 16]             128
+           Conv2d-25           [-1, 64, 16, 16]          36,928
+      BatchNorm2d-26           [-1, 64, 16, 16]             128
+           Conv2d-27             [-1, 64, 8, 8]           4,160
+           Conv2d-28             [-1, 64, 8, 8]           4,160
+        SkipBlock-29             [-1, 64, 8, 8]               0
+           Conv2d-30             [-1, 64, 8, 8]          36,928
+      BatchNorm2d-31             [-1, 64, 8, 8]             128
+           Conv2d-32             [-1, 64, 8, 8]          36,928
+      BatchNorm2d-33             [-1, 64, 8, 8]             128
+        SkipBlock-34             [-1, 64, 8, 8]               0
+           Conv2d-35             [-1, 64, 8, 8]          36,928
+      BatchNorm2d-36             [-1, 64, 8, 8]             128
+           Conv2d-37             [-1, 64, 8, 8]          36,928
+      BatchNorm2d-38             [-1, 64, 8, 8]             128
+        SkipBlock-39             [-1, 64, 8, 8]               0
+           Conv2d-40             [-1, 64, 8, 8]          36,928
+      BatchNorm2d-41             [-1, 64, 8, 8]             128
+           Conv2d-42             [-1, 64, 8, 8]          36,928
+      BatchNorm2d-43             [-1, 64, 8, 8]             128
+        SkipBlock-44             [-1, 64, 8, 8]               0
+           Conv2d-45             [-1, 64, 8, 8]          36,928
+      BatchNorm2d-46             [-1, 64, 8, 8]             128
+           Conv2d-47             [-1, 64, 8, 8]          36,928
+      BatchNorm2d-48             [-1, 64, 8, 8]             128
+        SkipBlock-49             [-1, 64, 8, 8]               0
+           Conv2d-50            [-1, 128, 8, 8]          73,856
+      BatchNorm2d-51            [-1, 128, 8, 8]             256
+        SkipBlock-52            [-1, 128, 8, 8]               0
+           Conv2d-53            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-54            [-1, 128, 8, 8]             256
+           Conv2d-55            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-56            [-1, 128, 8, 8]             256
+        SkipBlock-57            [-1, 128, 8, 8]               0
+           Conv2d-58            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-59            [-1, 128, 8, 8]             256
+           Conv2d-60            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-61            [-1, 128, 8, 8]             256
+        SkipBlock-62            [-1, 128, 8, 8]               0
+           Conv2d-63            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-64            [-1, 128, 8, 8]             256
+           Conv2d-65            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-66            [-1, 128, 8, 8]             256
+        SkipBlock-67            [-1, 128, 8, 8]               0
+           Conv2d-68            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-69            [-1, 128, 8, 8]             256
+           Conv2d-70            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-71            [-1, 128, 8, 8]             256
+        SkipBlock-72            [-1, 128, 8, 8]               0
+           Conv2d-73            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-74            [-1, 128, 8, 8]             256
+           Conv2d-75            [-1, 128, 8, 8]         147,584
+      BatchNorm2d-76            [-1, 128, 8, 8]             256
+           Conv2d-77            [-1, 128, 4, 4]          16,512
+           Conv2d-78            [-1, 128, 4, 4]          16,512
+        SkipBlock-79            [-1, 128, 4, 4]               0
+           Conv2d-80            [-1, 128, 4, 4]         147,584
+      BatchNorm2d-81            [-1, 128, 4, 4]             256
+           Conv2d-82            [-1, 128, 4, 4]         147,584
+      BatchNorm2d-83            [-1, 128, 4, 4]             256
+        SkipBlock-84            [-1, 128, 4, 4]               0
+           Conv2d-85            [-1, 128, 4, 4]         147,584
+      BatchNorm2d-86            [-1, 128, 4, 4]             256
+           Conv2d-87            [-1, 128, 4, 4]         147,584
+      BatchNorm2d-88            [-1, 128, 4, 4]             256
+        SkipBlock-89            [-1, 128, 4, 4]               0
+           Conv2d-90            [-1, 128, 4, 4]         147,584
+      BatchNorm2d-91            [-1, 128, 4, 4]             256
+           Conv2d-92            [-1, 128, 4, 4]         147,584
+      BatchNorm2d-93            [-1, 128, 4, 4]             256
+        SkipBlock-94            [-1, 128, 4, 4]               0
+           Conv2d-95            [-1, 128, 4, 4]         147,584
+      BatchNorm2d-96            [-1, 128, 4, 4]             256
+           Conv2d-97            [-1, 128, 4, 4]         147,584
+      BatchNorm2d-98            [-1, 128, 4, 4]             256
+        SkipBlock-99            [-1, 128, 4, 4]               0
+          Linear-100                 [-1, 1000]       2,049,000
+          Linear-101                    [-1, 5]           5,005
+          Conv2d-102           [-1, 64, 16, 16]          36,928
+            ReLU-103           [-1, 64, 16, 16]               0
+          Conv2d-104           [-1, 64, 16, 16]          36,928
+            ReLU-105           [-1, 64, 16, 16]               0
+          Conv2d-106           [-1, 64, 16, 16]          36,928
+            ReLU-107           [-1, 64, 16, 16]               0
+          Conv2d-108           [-1, 64, 16, 16]          36,928
+            ReLU-109           [-1, 64, 16, 16]               0
+          Linear-110                 [-1, 1024]      16,778,240
+            ReLU-111                 [-1, 1024]               0
+          Linear-112                  [-1, 512]         524,800
+            ReLU-113                  [-1, 512]               0
+          Linear-114                    [-1, 4]           2,052
+================================================================
+Total params: 22,952,185
+Trainable params: 22,952,185
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 7.42
+Params size (MB): 87.56
+Estimated Total Size (MB): 94.99
+----------------------------------------------------------------
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+
+[epoch=1 iter=500:] Ground Truth:           oval       oval       oval  rectangle
+[epoch=1 iter=500:] Predicted Labels:       oval       oval  rectangle  rectangle
+                    gt_bb:  [14,6,31,16]
+                  pred_bb:  [11,3,23,15]
+                    gt_bb:  [12,9,31,16]
+                  pred_bb:  [11,4,22,15]
+                    gt_bb:  [10,7,24,17]
+                  pred_bb:  [7,3,18,14]
+                    gt_bb:  [12,7,23,21]
+                  pred_bb:  [7,2,19,15]
+
+[epoch:1, iteration:  500]  loss_labeling: 2.304  loss_regression: 56.339
+
+
+[epoch=1 iter=1000:] Ground Truth:           star  rectangle   triangle  rectangle
+[epoch=1 iter=1000:] Predicted Labels:  rectangle       oval   triangle       disk
+                    gt_bb:  [6,5,20,17]
+                  pred_bb:  [7,1,20,15]
+                    gt_bb:  [17,15,29,19]
+                  pred_bb:  [13,9,23,20]
+                    gt_bb:  [5,3,26,30]
+                  pred_bb:  [2,1,23,24]
+                    gt_bb:  [4,0,23,20]
+                  pred_bb:  [6,0,22,17]
+
+[epoch:1, iteration: 1000]  loss_labeling: 1.595  loss_regression: 19.378
+
+
+[epoch=1 iter=1500:] Ground Truth:           star       star   triangle       star
+[epoch=1 iter=1500:] Predicted Labels:       oval       disk   triangle       star
+                    gt_bb:  [10,0,25,11]
+                  pred_bb:  [13,2,24,14]
+                    gt_bb:  [5,9,20,24]
+                  pred_bb:  [2,9,21,27]
+                    gt_bb:  [4,0,27,30]
+                  pred_bb:  [5,7,31,31]
+                    gt_bb:  [3,1,18,17]
+                  pred_bb:  [2,2,18,17]
+
+[epoch:1, iteration: 1500]  loss_labeling: 1.391  loss_regression: 15.275
+
+
+[epoch=1 iter=2000:] Ground Truth:           star   triangle   triangle       oval
+[epoch=1 iter=2000:] Predicted Labels:       oval   triangle   triangle       disk
+                    gt_bb:  [8,0,19,7]
+                  pred_bb:  [9,3,20,14]
+                    gt_bb:  [2,4,23,27]
+                  pred_bb:  [0,6,22,30]
+                    gt_bb:  [2,6,29,30]
+                  pred_bb:  [5,10,31,31]
+                    gt_bb:  [22,17,31,25]
+                  pred_bb:  [8,11,21,24]
+
+[epoch:1, iteration: 2000]  loss_labeling: 1.282  loss_regression: 10.681
+
+
+[epoch=1 iter=2500:] Ground Truth:      rectangle   triangle       oval   triangle
+[epoch=1 iter=2500:] Predicted Labels:       oval   triangle       oval       star
+                    gt_bb:  [10,3,30,23]
+                  pred_bb:  [9,6,31,22]
+                    gt_bb:  [6,0,30,23]
+                  pred_bb:  [5,1,25,19]
+                    gt_bb:  [12,9,31,17]
+                  pred_bb:  [12,6,31,18]
+                    gt_bb:  [0,6,26,28]
+                  pred_bb:  [3,5,22,23]
+
+[epoch:1, iteration: 2500]  loss_labeling: 1.241  loss_regression: 11.316
+
+Finished Training
+
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+
+[i=0:] Ground Truth:      rectangle   triangle       disk       oval
+[i=0:] Predicted Labels:       star   triangle       disk       disk
+                    gt_bb:  [14,9,19,15]
+                  pred_bb:  [11,7,23,17]
+                    gt_bb:  [0,1,29,28]
+                  pred_bb:  [2,6,25,27]
+                    gt_bb:  [3,17,13,27]
+                  pred_bb:  [6,12,18,22]
+                    gt_bb:  [11,0,21,14]
+                  pred_bb:  [10,0,23,13]
+
+
+[i=50:] Ground Truth:      rectangle   triangle       disk       oval
+[i=50:] Predicted Labels:       star       disk       disk       disk
+                    gt_bb:  [5,1,13,10]
+                  pred_bb:  [5,1,16,10]
+                    gt_bb:  [7,2,29,31]
+                  pred_bb:  [7,6,28,29]
+                    gt_bb:  [8,1,26,19]
+                  pred_bb:  [6,1,26,19]
+                    gt_bb:  [13,11,25,15]
+                  pred_bb:  [12,6,25,18]
+
+
+[i=100:] Ground Truth:      rectangle   triangle       disk       oval
+[i=100:] Predicted Labels:       disk       disk       oval       disk
+                    gt_bb:  [2,0,5,3]
+                  pred_bb:  [11,11,21,19]
+                    gt_bb:  [0,6,27,30]
+                  pred_bb:  [2,5,27,28]
+                    gt_bb:  [20,5,30,15]
+                  pred_bb:  [17,4,31,15]
+                    gt_bb:  [12,7,31,21]
+                  pred_bb:  [11,7,31,22]
+
+
+[i=150:] Ground Truth:      rectangle   triangle       disk       oval
+[i=150:] Predicted Labels:       star       disk       disk       oval
+                    gt_bb:  [4,3,9,9]
+                  pred_bb:  [3,1,14,10]
+                    gt_bb:  [3,1,31,27]
+                  pred_bb:  [5,3,29,25]
+                    gt_bb:  [1,4,13,16]
+                  pred_bb:  [1,2,13,14]
+                    gt_bb:  [18,11,31,22]
+                  pred_bb:  [15,9,29,20]
+
+
+[i=200:] Ground Truth:      rectangle   triangle       disk       oval
+[i=200:] Predicted Labels:       disk   triangle       disk       star
+                    gt_bb:  [7,3,13,10]
+                  pred_bb:  [3,0,14,11]
+                    gt_bb:  [7,2,31,27]
+                  pred_bb:  [5,2,28,26]
+                    gt_bb:  [14,8,31,26]
+                  pred_bb:  [16,9,30,21]
+                    gt_bb:  [5,0,25,21]
+                  pred_bb:  [5,1,25,22]
+
+
+Prediction accuracy for rectangle : 26 %
+Prediction accuracy for triangle : 49 %
+Prediction accuracy for  disk : 78 %
+Prediction accuracy for  oval : 39 %
+Prediction accuracy for  star : 64 %
+
+
+
+Overall accuracy of the network on the 1000 test images: 51 %
+
+
+Displaying the confusion matrix:
+
+                      rectangle       triangle           disk           oval           star
+
+   rectangle:            26.00           2.00          27.50          23.00          21.50
+    triangle:            12.50          49.50          20.00           5.00          13.00
+        disk:             4.50           1.50          78.00           8.00           8.00
+        oval:            20.50           1.00          24.00          39.50          15.00
+        star:             8.00           0.50          20.50           6.50          64.50

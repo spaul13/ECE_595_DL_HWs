@@ -1,0 +1,162 @@
+
+[epoch=1 iter=500:] Ground Truth:           oval       oval       oval  rectangle
+[epoch=1 iter=500:] Predicted Labels:  rectangle  rectangle  rectangle  rectangle
+                    gt_bb:  [18,15,31,25]
+                  pred_bb:  [9,10,15,15]
+                    gt_bb:  [15,6,25,20]
+                  pred_bb:  [11,4,19,12]
+                    gt_bb:  [17,11,31,21]
+                  pred_bb:  [9,7,15,12]
+                    gt_bb:  [11,1,23,20]
+                  pred_bb:  [3,0,8,6]
+
+[epoch:1, iteration:  500]  loss_labeling: 1.266  loss_regression: 213.676
+
+
+[epoch=1 iter=1000:] Ground Truth:           star  rectangle   triangle  rectangle
+[epoch=1 iter=1000:] Predicted Labels:       disk       oval   triangle       oval
+                    gt_bb:  [6,1,16,10]
+                  pred_bb:  [1,0,3,2]
+                    gt_bb:  [20,9,23,22]
+                  pred_bb:  [11,5,14,11]
+                    gt_bb:  [5,3,29,26]
+                  pred_bb:  [4,5,21,24]
+                    gt_bb:  [14,4,28,16]
+                  pred_bb:  [14,2,27,16]
+
+[epoch:1, iteration: 1000]  loss_labeling: 1.073  loss_regression: 55.856
+
+
+[epoch=1 iter=1500:] Ground Truth:           star       star   triangle       star
+[epoch=1 iter=1500:] Predicted Labels:       star       star       disk       star
+                    gt_bb:  [0,12,11,25]
+                  pred_bb:  [0,11,10,22]
+                    gt_bb:  [3,2,12,12]
+                  pred_bb:  [1,2,10,10]
+                    gt_bb:  [1,0,27,25]
+                  pred_bb:  [1,1,23,21]
+                    gt_bb:  [5,6,15,15]
+                  pred_bb:  [2,3,12,12]
+
+[epoch:1, iteration: 1500]  loss_labeling: 0.972  loss_regression: 32.270
+
+
+[epoch=1 iter=2000:] Ground Truth:           star   triangle   triangle       oval
+[epoch=1 iter=2000:] Predicted Labels:       star   triangle   triangle       star
+                    gt_bb:  [4,0,18,12]
+                  pred_bb:  [3,1,14,12]
+                    gt_bb:  [0,1,28,29]
+                  pred_bb:  [4,3,23,22]
+                    gt_bb:  [1,4,20,25]
+                  pred_bb:  [1,2,17,18]
+                    gt_bb:  [7,3,29,19]
+                  pred_bb:  [7,0,29,21]
+
+[epoch:1, iteration: 2000]  loss_labeling: 0.880  loss_regression: 29.065
+
+
+[epoch=1 iter=2500:] Ground Truth:      rectangle   triangle       oval   triangle
+[epoch=1 iter=2500:] Predicted Labels:  rectangle       disk       oval   triangle
+                    gt_bb:  [19,15,29,25]
+                  pred_bb:  [25,21,31,31]
+                    gt_bb:  [1,11,23,30]
+                  pred_bb:  [3,19,27,31]
+                    gt_bb:  [13,8,31,21]
+                  pred_bb:  [19,12,31,28]
+                    gt_bb:  [0,4,26,30]
+                  pred_bb:  [5,7,31,31]
+
+[epoch:1, iteration: 2500]  loss_labeling: 0.809  loss_regression: 15.316
+
+Finished Training
+
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+Loading training data from the torch-saved archive
+
+
+[i=0:] Ground Truth:      rectangle   triangle       disk       oval
+[i=0:] Predicted Labels:       oval   triangle       disk       star
+                    gt_bb:  [19,15,27,22]
+                  pred_bb:  [19,15,30,24]
+                    gt_bb:  [2,0,31,28]
+                  pred_bb:  [7,3,31,31]
+                    gt_bb:  [4,21,14,31]
+                  pred_bb:  [3,16,25,31]
+                    gt_bb:  [7,6,19,10]
+                  pred_bb:  [6,3,20,14]
+
+
+[i=50:] Ground Truth:      rectangle   triangle       disk       oval
+[i=50:] Predicted Labels:       disk   triangle       disk  rectangle
+                    gt_bb:  [10,8,11,10]
+                  pred_bb:  [5,4,19,18]
+                    gt_bb:  [2,3,29,27]
+                  pred_bb:  [5,6,31,31]
+                    gt_bb:  [9,3,19,13]
+                  pred_bb:  [6,2,21,17]
+                    gt_bb:  [12,1,28,21]
+                  pred_bb:  [13,3,31,21]
+
+
+[i=100:] Ground Truth:      rectangle   triangle       disk       oval
+[i=100:] Predicted Labels:       star       disk       disk       oval
+                    gt_bb:  [9,7,21,19]
+                  pred_bb:  [8,6,21,17]
+                    gt_bb:  [7,8,29,31]
+                  pred_bb:  [11,11,31,30]
+                    gt_bb:  [2,13,20,31]
+                  pred_bb:  [2,18,25,31]
+                    gt_bb:  [12,0,18,13]
+                  pred_bb:  [11,2,23,16]
+
+
+[i=150:] Ground Truth:      rectangle   triangle       disk       oval
+[i=150:] Predicted Labels:       star   triangle       disk       oval
+                    gt_bb:  [9,5,22,20]
+                  pred_bb:  [9,5,23,18]
+                    gt_bb:  [7,3,31,30]
+                  pred_bb:  [14,7,31,31]
+                    gt_bb:  [4,11,18,25]
+                  pred_bb:  [0,15,21,31]
+                    gt_bb:  [15,0,27,17]
+                  pred_bb:  [16,4,31,21]
+
+
+[i=200:] Ground Truth:      rectangle   triangle       disk       oval
+[i=200:] Predicted Labels:  rectangle   triangle       disk  rectangle
+                    gt_bb:  [11,4,16,16]
+                  pred_bb:  [9,3,21,14]
+                    gt_bb:  [6,0,28,24]
+                  pred_bb:  [6,3,28,25]
+                    gt_bb:  [21,10,31,20]
+                  pred_bb:  [10,6,25,19]
+                    gt_bb:  [18,15,31,19]
+                  pred_bb:  [25,18,31,27]
+
+
+Prediction accuracy for rectangle : 22 %
+Prediction accuracy for triangle : 85 %
+Prediction accuracy for  disk : 87 %
+Prediction accuracy for  oval : 65 %
+Prediction accuracy for  star : 82 %
+
+
+
+Overall accuracy of the network on the 1000 test images: 68 %
+
+
+Displaying the confusion matrix:
+
+                      rectangle       triangle           disk           oval           star
+
+   rectangle:            22.00           7.50          15.00          38.50          17.00
+    triangle:             2.50          85.50           7.50           2.00           2.50
+        disk:             1.50           2.50          87.50           6.00           2.50
+        oval:            17.00           1.00          10.50          65.00           6.50
+        star:             6.50           3.50           4.50           3.50          82.00

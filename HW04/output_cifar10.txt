@@ -1,0 +1,12 @@
+Epoch 1: 1.117
+Epoch 2: 0.895
+Epoch 3: 0.731
+Epoch 4: 0.606
+Epoch 5: 0.506
+Epoch 6: 0.394
+Epoch 7: 0.301
+Epoch 8: 0.198
+Epoch 9: 0.124
+Epoch 10: 0.071
+
+Classification Accuracy: 76 %

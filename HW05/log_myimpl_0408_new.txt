@@ -1,0 +1,1067 @@
+
+
+
+printing out the model:
+Noise_classify_Net(
+  (conv_seqn): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc_seqn): Sequential(
+    (0): Linear(in_features=8192, out_features=1000, bias=True)
+    (1): ReLU(inplace)
+    (2): Linear(in_features=1000, out_features=4, bias=True)
+  )
+)
+
+
+
+a summary of input/output for the model:
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,792
+              ReLU-2           [-1, 64, 32, 32]               0
+         MaxPool2d-3           [-1, 64, 16, 16]               0
+            Conv2d-4          [-1, 128, 16, 16]          73,856
+              ReLU-5          [-1, 128, 16, 16]               0
+         MaxPool2d-6            [-1, 128, 8, 8]               0
+            Linear-7                 [-1, 1000]       8,193,000
+              ReLU-8                 [-1, 1000]               0
+            Linear-9                    [-1, 4]           4,004
+================================================================
+Total params: 8,272,652
+Trainable params: 8,272,652
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 1.70
+Params size (MB): 31.56
+Estimated Total Size (MB): 33.27
+----------------------------------------------------------------
+{0: 'rectangle', 1: 'triangle', 2: 'disk', 3: 'oval', 4: 'star'}
+
+ ....... Inside noiselevel_training() ........ 
+
+2500
+
+[epoch:1, iteration:  500]  loss_labeling: 0.709 
+
+[epoch:1, iteration: 1000]  loss_labeling: 0.406 
+
+[epoch:1, iteration: 1500]  loss_labeling: 0.335 
+
+[epoch:1, iteration: 2000]  loss_labeling: 0.286 
+
+[epoch:1, iteration: 2500]  loss_labeling: 0.271 
+
+[epoch:2, iteration:  500]  loss_labeling: 0.219 
+
+[epoch:2, iteration: 1000]  loss_labeling: 0.216 
+
+[epoch:2, iteration: 1500]  loss_labeling: 0.219 
+
+[epoch:2, iteration: 2000]  loss_labeling: 0.205 
+
+[epoch:2, iteration: 2500]  loss_labeling: 0.197 
+
+[epoch:3, iteration:  500]  loss_labeling: 0.177 
+
+[epoch:3, iteration: 1000]  loss_labeling: 0.174 
+
+[epoch:3, iteration: 1500]  loss_labeling: 0.179 
+
+[epoch:3, iteration: 2000]  loss_labeling: 0.171 
+
+[epoch:3, iteration: 2500]  loss_labeling: 0.166 
+
+[epoch:4, iteration:  500]  loss_labeling: 0.151 
+
+[epoch:4, iteration: 1000]  loss_labeling: 0.151 
+
+[epoch:4, iteration: 1500]  loss_labeling: 0.156 
+
+[epoch:4, iteration: 2000]  loss_labeling: 0.147 
+
+[epoch:4, iteration: 2500]  loss_labeling: 0.147 
+
+[epoch:5, iteration:  500]  loss_labeling: 0.134 
+
+[epoch:5, iteration: 1000]  loss_labeling: 0.137 
+
+[epoch:5, iteration: 1500]  loss_labeling: 0.142 
+
+[epoch:5, iteration: 2000]  loss_labeling: 0.133 
+
+[epoch:5, iteration: 2500]  loss_labeling: 0.135 
+
+[epoch:6, iteration:  500]  loss_labeling: 0.124 
+
+[epoch:6, iteration: 1000]  loss_labeling: 0.127 
+
+[epoch:6, iteration: 1500]  loss_labeling: 0.131 
+
+[epoch:6, iteration: 2000]  loss_labeling: 0.123 
+
+[epoch:6, iteration: 2500]  loss_labeling: 0.125 
+
+[epoch:7, iteration:  500]  loss_labeling: 0.114 
+
+[epoch:7, iteration: 1000]  loss_labeling: 0.119 
+
+[epoch:7, iteration: 1500]  loss_labeling: 0.122 
+
+[epoch:7, iteration: 2000]  loss_labeling: 0.115 
+
+[epoch:7, iteration: 2500]  loss_labeling: 0.117 
+
+[epoch:8, iteration:  500]  loss_labeling: 0.106 
+
+[epoch:8, iteration: 1000]  loss_labeling: 0.113 
+
+[epoch:8, iteration: 1500]  loss_labeling: 0.115 
+
+[epoch:8, iteration: 2000]  loss_labeling: 0.108 
+
+[epoch:8, iteration: 2500]  loss_labeling: 0.111 
+
+[epoch:9, iteration:  500]  loss_labeling: 0.101 
+
+[epoch:9, iteration: 1000]  loss_labeling: 0.109 
+
+[epoch:9, iteration: 1500]  loss_labeling: 0.108 
+
+[epoch:9, iteration: 2000]  loss_labeling: 0.103 
+
+[epoch:9, iteration: 2500]  loss_labeling: 0.104 
+
+[epoch:10, iteration:  500]  loss_labeling: 0.095 
+
+[epoch:10, iteration: 1000]  loss_labeling: 0.103 
+
+[epoch:10, iteration: 1500]  loss_labeling: 0.102 
+
+[epoch:10, iteration: 2000]  loss_labeling: 0.098 
+
+[epoch:10, iteration: 2500]  loss_labeling: 0.100 
+
+[epoch:11, iteration:  500]  loss_labeling: 0.091 
+
+[epoch:11, iteration: 1000]  loss_labeling: 0.098 
+
+[epoch:11, iteration: 1500]  loss_labeling: 0.096 
+
+[epoch:11, iteration: 2000]  loss_labeling: 0.093 
+
+[epoch:11, iteration: 2500]  loss_labeling: 0.096 
+
+[epoch:12, iteration:  500]  loss_labeling: 0.086 
+
+[epoch:12, iteration: 1000]  loss_labeling: 0.092 
+
+[epoch:12, iteration: 1500]  loss_labeling: 0.089 
+
+[epoch:12, iteration: 2000]  loss_labeling: 0.088 
+
+[epoch:12, iteration: 2500]  loss_labeling: 0.092 
+
+[epoch:13, iteration:  500]  loss_labeling: 0.082 
+
+[epoch:13, iteration: 1000]  loss_labeling: 0.087 
+
+[epoch:13, iteration: 1500]  loss_labeling: 0.086 
+
+[epoch:13, iteration: 2000]  loss_labeling: 0.085 
+
+[epoch:13, iteration: 2500]  loss_labeling: 0.089 
+
+[epoch:14, iteration:  500]  loss_labeling: 0.078 
+
+[epoch:14, iteration: 1000]  loss_labeling: 0.083 
+
+[epoch:14, iteration: 1500]  loss_labeling: 0.081 
+
+[epoch:14, iteration: 2000]  loss_labeling: 0.081 
+
+[epoch:14, iteration: 2500]  loss_labeling: 0.084 
+
+[epoch:15, iteration:  500]  loss_labeling: 0.075 
+
+[epoch:15, iteration: 1000]  loss_labeling: 0.079 
+
+[epoch:15, iteration: 1500]  loss_labeling: 0.078 
+
+[epoch:15, iteration: 2000]  loss_labeling: 0.080 
+
+[epoch:15, iteration: 2500]  loss_labeling: 0.082 
+
+[epoch:16, iteration:  500]  loss_labeling: 0.073 
+
+[epoch:16, iteration: 1000]  loss_labeling: 0.076 
+
+[epoch:16, iteration: 1500]  loss_labeling: 0.074 
+
+[epoch:16, iteration: 2000]  loss_labeling: 0.076 
+
+[epoch:16, iteration: 2500]  loss_labeling: 0.078 
+
+[epoch:17, iteration:  500]  loss_labeling: 0.070 
+
+[epoch:17, iteration: 1000]  loss_labeling: 0.074 
+
+[epoch:17, iteration: 1500]  loss_labeling: 0.070 
+
+[epoch:17, iteration: 2000]  loss_labeling: 0.072 
+
+[epoch:17, iteration: 2500]  loss_labeling: 0.076 
+
+[epoch:18, iteration:  500]  loss_labeling: 0.067 
+
+[epoch:18, iteration: 1000]  loss_labeling: 0.071 
+
+[epoch:18, iteration: 1500]  loss_labeling: 0.065 
+
+[epoch:18, iteration: 2000]  loss_labeling: 0.069 
+
+[epoch:18, iteration: 2500]  loss_labeling: 0.074 
+
+[epoch:19, iteration:  500]  loss_labeling: 0.065 
+
+[epoch:19, iteration: 1000]  loss_labeling: 0.069 
+
+[epoch:19, iteration: 1500]  loss_labeling: 0.062 
+
+[epoch:19, iteration: 2000]  loss_labeling: 0.065 
+
+[epoch:19, iteration: 2500]  loss_labeling: 0.071 
+
+[epoch:20, iteration:  500]  loss_labeling: 0.063 
+
+[epoch:20, iteration: 1000]  loss_labeling: 0.066 
+
+[epoch:20, iteration: 1500]  loss_labeling: 0.058 
+
+[epoch:20, iteration: 2000]  loss_labeling: 0.062 
+
+[epoch:20, iteration: 2500]  loss_labeling: 0.066 
+
+Finished Training
+
+
+ testing on testdataloader_1 
+
+
+ Testing accuracy = 1.000000 
+
+ the predicted noise label for overall dataset is = 0
+
+ part of confusion matrix 
+
+[1000, 0, 0, 0]
+
+ Testing accuracy = 0.943000 
+
+ the predicted noise label for overall dataset is = 1
+
+ part of confusion matrix 
+
+[0, 943, 55, 2]
+
+ Testing accuracy = 0.898000 
+
+ the predicted noise label for overall dataset is = 2
+
+ part of confusion matrix 
+
+[0, 57, 898, 45]
+
+ Testing accuracy = 0.800000 
+
+ the predicted noise label for overall dataset is = 3
+
+ part of confusion matrix 
+
+[0, 0, 200, 800]
+
+ ............ Final Detection starts ......... 
+
+
+ testing on testdataloader_1 
+
+
+ predicted noise level 0 percent and actual = 1 
+
+
+ ... training for depth 32 .... 
+
+                    gt_bb:  [18,17,30,29]
+                  pred_bb:  [12,9,31,27]
+                    gt_bb:  [20,22,30,31]
+                  pred_bb:  [14,11,31,31]
+                    gt_bb:  [6,7,21,22]
+                  pred_bb:  [5,5,20,19]
+                    gt_bb:  [2,6,12,15]
+                  pred_bb:  [3,4,16,15]
+
+[epoch:1, iteration:  500]  loss_labeling: 1.888  loss_regression: 82.378  
+                    gt_bb:  [4,8,26,30]
+                  pred_bb:  [1,9,24,31]
+                    gt_bb:  [13,5,31,23]
+                  pred_bb:  [11,7,22,18]
+                    gt_bb:  [11,3,29,25]
+                  pred_bb:  [12,2,31,21]
+                    gt_bb:  [16,9,24,19]
+                  pred_bb:  [12,7,22,17]
+
+[epoch:1, iteration: 1000]  loss_labeling: 1.536  loss_regression: 10.741  
+                    gt_bb:  [5,6,19,20]
+                  pred_bb:  [2,4,19,21]
+                    gt_bb:  [13,4,19,16]
+                  pred_bb:  [10,2,21,14]
+                    gt_bb:  [19,11,31,23]
+                  pred_bb:  [18,11,29,20]
+                    gt_bb:  [13,8,31,18]
+                  pred_bb:  [13,7,27,19]
+
+[epoch:1, iteration: 1500]  loss_labeling: 1.360  loss_regression: 5.711  
+                    gt_bb:  [1,3,31,30]
+                  pred_bb:  [0,1,28,29]
+                    gt_bb:  [15,8,31,16]
+                  pred_bb:  [15,7,27,17]
+                    gt_bb:  [3,8,17,21]
+                  pred_bb:  [1,7,16,21]
+                    gt_bb:  [11,0,18,17]
+                  pred_bb:  [8,1,21,15]
+
+[epoch:1, iteration: 2000]  loss_labeling: 1.236  loss_regression: 4.134  
+                    gt_bb:  [4,2,20,18]
+                  pred_bb:  [2,2,18,19]
+                    gt_bb:  [15,10,30,25]
+                  pred_bb:  [13,8,28,23]
+                    gt_bb:  [13,10,23,20]
+                  pred_bb:  [12,8,24,20]
+                    gt_bb:  [9,0,21,11]
+                  pred_bb:  [9,0,20,12]
+
+[epoch:1, iteration: 2500]  loss_labeling: 1.138  loss_regression: 3.100  
+                    gt_bb:  [12,0,24,16]
+                  pred_bb:  [11,0,24,15]
+                    gt_bb:  [5,1,21,17]
+                  pred_bb:  [4,2,20,17]
+                    gt_bb:  [9,0,31,20]
+                  pred_bb:  [11,0,29,19]
+                    gt_bb:  [1,2,14,15]
+                  pred_bb:  [2,1,14,13]
+
+[epoch:2, iteration:  500]  loss_labeling: 1.080  loss_regression: 2.673  
+                    gt_bb:  [20,16,24,20]
+                  pred_bb:  [17,13,25,19]
+                    gt_bb:  [0,5,27,30]
+                  pred_bb:  [1,4,28,30]
+                    gt_bb:  [2,0,31,30]
+                  pred_bb:  [0,1,28,28]
+                    gt_bb:  [15,0,19,15]
+                  pred_bb:  [12,3,22,14]
+
+[epoch:2, iteration: 1000]  loss_labeling: 1.008  loss_regression: 2.482  
+                    gt_bb:  [9,4,21,10]
+                  pred_bb:  [9,2,19,11]
+                    gt_bb:  [5,4,30,29]
+                  pred_bb:  [5,4,31,27]
+                    gt_bb:  [3,6,28,29]
+                  pred_bb:  [5,6,29,29]
+                    gt_bb:  [6,5,18,17]
+                  pred_bb:  [5,5,18,17]
+
+[epoch:2, iteration: 1500]  loss_labeling: 0.942  loss_regression: 2.324  
+                    gt_bb:  [3,1,29,23]
+                  pred_bb:  [3,1,27,25]
+                    gt_bb:  [8,5,22,19]
+                  pred_bb:  [8,6,18,15]
+                    gt_bb:  [0,3,30,29]
+                  pred_bb:  [0,1,29,29]
+                    gt_bb:  [4,3,23,21]
+                  pred_bb:  [4,2,22,20]
+
+[epoch:2, iteration: 2000]  loss_labeling: 0.911  loss_regression: 1.879  
+                    gt_bb:  [5,2,21,16]
+                  pred_bb:  [6,2,19,16]
+                    gt_bb:  [1,9,24,31]
+                  pred_bb:  [0,12,20,31]
+                    gt_bb:  [8,9,18,19]
+                  pred_bb:  [7,9,18,18]
+                    gt_bb:  [14,5,28,22]
+                  pred_bb:  [12,4,28,20]
+
+[epoch:2, iteration: 2500]  loss_labeling: 0.873  loss_regression: 1.987  
+
+Finished Training
+
+
+
+[i=0:] Ground Truth:      rectangle   triangle       disk       oval
+[i=0:] Predicted Labels:       oval   triangle       disk       star
+                    gt_bb:  [19,15,27,22]
+                  pred_bb:  [18,14,26,21]
+                    gt_bb:  [2,0,31,28]
+                  pred_bb:  [3,1,30,28]
+                    gt_bb:  [4,21,14,31]
+                  pred_bb:  [5,17,15,28]
+                    gt_bb:  [7,6,19,10]
+                  pred_bb:  [8,5,17,12]
+
+
+[i=50:] Ground Truth:      rectangle   triangle       disk       oval
+[i=50:] Predicted Labels:       star   triangle       disk       oval
+                    gt_bb:  [10,8,11,10]
+                  pred_bb:  [9,8,12,10]
+                    gt_bb:  [2,3,29,27]
+                  pred_bb:  [1,4,27,30]
+                    gt_bb:  [9,3,19,13]
+                  pred_bb:  [8,3,17,12]
+                    gt_bb:  [12,1,28,21]
+                  pred_bb:  [11,0,28,20]
+
+
+[i=100:] Ground Truth:      rectangle   triangle       disk       oval
+[i=100:] Predicted Labels:   triangle       disk       disk       oval
+                    gt_bb:  [9,7,21,19]
+                  pred_bb:  [9,8,21,19]
+                    gt_bb:  [7,8,29,31]
+                  pred_bb:  [11,13,28,31]
+                    gt_bb:  [2,13,20,31]
+                  pred_bb:  [1,13,19,31]
+                    gt_bb:  [12,0,18,13]
+                  pred_bb:  [10,1,18,12]
+
+
+[i=150:] Ground Truth:      rectangle   triangle       disk       oval
+[i=150:] Predicted Labels:  rectangle   triangle       disk       oval
+                    gt_bb:  [9,5,22,20]
+                  pred_bb:  [9,6,21,19]
+                    gt_bb:  [7,3,31,30]
+                  pred_bb:  [8,4,30,30]
+                    gt_bb:  [4,11,18,25]
+                  pred_bb:  [2,10,18,25]
+                    gt_bb:  [15,0,27,17]
+                  pred_bb:  [15,1,27,16]
+
+
+[i=200:] Ground Truth:      rectangle   triangle       disk       oval
+[i=200:] Predicted Labels:       star   triangle       disk       oval
+                    gt_bb:  [11,4,16,16]
+                  pred_bb:  [9,4,17,13]
+                    gt_bb:  [6,0,28,24]
+                  pred_bb:  [5,1,26,25]
+                    gt_bb:  [21,10,31,20]
+                  pred_bb:  [19,11,31,19]
+                    gt_bb:  [18,15,31,19]
+                  pred_bb:  [19,14,29,21]
+
+
+Prediction accuracy for rectangle : 24 %
+Prediction accuracy for triangle : 89 %
+Prediction accuracy for  disk : 86 %
+Prediction accuracy for  oval : 69 %
+Prediction accuracy for  star : 73 %
+
+
+
+Overall accuracy of the network on the 1000 test images: 68 %
+
+
+Displaying the confusion matrix:
+
+                      rectangle       triangle           disk           oval           star
+
+   rectangle:            24.00           7.50           8.50          39.50          20.50
+    triangle:             3.00          89.50           7.00           0.00           0.50
+        disk:             0.50           3.00          86.50           4.50           5.50
+        oval:            16.50           0.50           6.50          69.00           7.50
+        star:             4.50           5.00           6.00          11.00          73.50
+
+ testing on testdataloader_2 
+
+
+ predicted noise level 20 percent and actual = 2 
+
+
+ ... training for depth 64 .... 
+
+                    gt_bb:  [14,0,24,20]
+                  pred_bb:  [6,4,21,18]
+                    gt_bb:  [3,0,29,30]
+                  pred_bb:  [6,6,27,26]
+                    gt_bb:  [2,0,31,25]
+                  pred_bb:  [5,5,24,23]
+                    gt_bb:  [5,1,28,29]
+                  pred_bb:  [7,4,27,23]
+
+[epoch:1, iteration:  500]  loss_labeling: 1.783  loss_regression: 83.473  
+                    gt_bb:  [1,4,13,16]
+                  pred_bb:  [0,1,13,15]
+                    gt_bb:  [5,9,20,23]
+                  pred_bb:  [0,6,19,24]
+                    gt_bb:  [5,7,15,17]
+                  pred_bb:  [0,2,16,18]
+                    gt_bb:  [15,3,29,17]
+                  pred_bb:  [15,4,30,18]
+
+[epoch:1, iteration: 1000]  loss_labeling: 1.443  loss_regression: 9.266  
+                    gt_bb:  [0,1,24,30]
+                  pred_bb:  [3,4,25,27]
+                    gt_bb:  [17,14,31,25]
+                  pred_bb:  [18,15,31,28]
+                    gt_bb:  [2,4,28,29]
+                  pred_bb:  [2,2,29,29]
+                    gt_bb:  [15,10,22,17]
+                  pred_bb:  [12,7,20,15]
+
+[epoch:1, iteration: 1500]  loss_labeling: 1.262  loss_regression: 5.951  
+                    gt_bb:  [10,1,20,11]
+                  pred_bb:  [7,0,20,14]
+                    gt_bb:  [13,14,23,24]
+                  pred_bb:  [9,10,23,24]
+                    gt_bb:  [1,7,16,22]
+                  pred_bb:  [0,5,15,21]
+                    gt_bb:  [11,0,16,11]
+                  pred_bb:  [8,0,16,10]
+
+[epoch:1, iteration: 2000]  loss_labeling: 1.165  loss_regression: 4.871  
+                    gt_bb:  [7,0,25,17]
+                  pred_bb:  [9,1,23,15]
+                    gt_bb:  [4,1,31,29]
+                  pred_bb:  [6,9,22,24]
+                    gt_bb:  [6,0,31,23]
+                  pred_bb:  [6,3,28,23]
+                    gt_bb:  [3,0,29,28]
+                  pred_bb:  [2,1,26,25]
+
+[epoch:1, iteration: 2500]  loss_labeling: 1.107  loss_regression: 3.830  
+                    gt_bb:  [20,14,31,22]
+                  pred_bb:  [13,11,21,18]
+                    gt_bb:  [15,14,31,21]
+                  pred_bb:  [15,10,29,22]
+                    gt_bb:  [18,16,31,30]
+                  pred_bb:  [18,15,31,28]
+                    gt_bb:  [12,0,23,17]
+                  pred_bb:  [12,0,26,16]
+
+[epoch:2, iteration:  500]  loss_labeling: 1.009  loss_regression: 3.394  
+                    gt_bb:  [0,8,15,21]
+                  pred_bb:  [1,8,14,20]
+                    gt_bb:  [0,1,30,27]
+                  pred_bb:  [2,1,28,28]
+                    gt_bb:  [1,13,15,27]
+                  pred_bb:  [1,12,15,26]
+                    gt_bb:  [16,4,31,18]
+                  pred_bb:  [16,5,31,18]
+
+[epoch:2, iteration: 1000]  loss_labeling: 0.965  loss_regression: 3.029  
+                    gt_bb:  [8,0,27,16]
+                  pred_bb:  [11,1,24,15]
+                    gt_bb:  [4,2,29,28]
+                  pred_bb:  [3,1,29,27]
+                    gt_bb:  [5,9,23,26]
+                  pred_bb:  [7,10,22,23]
+                    gt_bb:  [1,4,28,29]
+                  pred_bb:  [3,3,27,27]
+
+[epoch:2, iteration: 1500]  loss_labeling: 0.931  loss_regression: 2.830  
+                    gt_bb:  [9,2,29,20]
+                  pred_bb:  [10,1,29,20]
+                    gt_bb:  [5,4,29,30]
+                  pred_bb:  [3,3,30,29]
+                    gt_bb:  [0,6,26,29]
+                  pred_bb:  [0,4,26,28]
+                    gt_bb:  [2,20,12,30]
+                  pred_bb:  [4,15,16,27]
+
+[epoch:2, iteration: 2000]  loss_labeling: 0.907  loss_regression: 2.745  
+                    gt_bb:  [7,20,17,30]
+                  pred_bb:  [7,17,17,28]
+                    gt_bb:  [14,3,31,18]
+                  pred_bb:  [15,4,30,18]
+                    gt_bb:  [7,0,20,12]
+                  pred_bb:  [7,0,18,11]
+                    gt_bb:  [12,6,31,21]
+                  pred_bb:  [11,5,30,21]
+
+[epoch:2, iteration: 2500]  loss_labeling: 0.857  loss_regression: 2.373  
+
+Finished Training
+
+
+
+[i=0:] Ground Truth:      rectangle   triangle       disk       oval
+[i=0:] Predicted Labels:       oval   triangle       disk  rectangle
+                    gt_bb:  [11,4,26,17]
+                  pred_bb:  [11,4,27,17]
+                    gt_bb:  [2,0,23,29]
+                  pred_bb:  [1,1,24,27]
+                    gt_bb:  [19,6,29,16]
+                  pred_bb:  [16,5,29,16]
+                    gt_bb:  [9,4,27,18]
+                  pred_bb:  [8,3,27,19]
+
+
+[i=50:] Ground Truth:      rectangle   triangle       disk       oval
+[i=50:] Predicted Labels:   triangle       disk       disk       star
+                    gt_bb:  [7,0,31,30]
+                  pred_bb:  [4,2,31,29]
+                    gt_bb:  [0,1,27,30]
+                  pred_bb:  [0,4,24,29]
+                    gt_bb:  [22,18,31,28]
+                  pred_bb:  [23,18,31,27]
+                    gt_bb:  [12,0,13,12]
+                  pred_bb:  [9,2,16,11]
+
+
+[i=100:] Ground Truth:      rectangle   triangle       disk       oval
+[i=100:] Predicted Labels:  rectangle   triangle       disk       star
+                    gt_bb:  [17,12,31,25]
+                  pred_bb:  [16,12,31,24]
+                    gt_bb:  [2,1,22,30]
+                  pred_bb:  [1,1,25,27]
+                    gt_bb:  [17,9,31,23]
+                  pred_bb:  [16,8,31,21]
+                    gt_bb:  [14,2,15,14]
+                  pred_bb:  [10,2,18,13]
+
+
+[i=150:] Ground Truth:      rectangle   triangle       disk       oval
+[i=150:] Predicted Labels:       oval       disk       oval  rectangle
+                    gt_bb:  [13,7,31,18]
+                  pred_bb:  [13,7,28,17]
+                    gt_bb:  [0,2,28,24]
+                  pred_bb:  [3,2,26,23]
+                    gt_bb:  [15,4,27,16]
+                  pred_bb:  [14,3,25,15]
+                    gt_bb:  [10,4,23,14]
+                  pred_bb:  [10,2,23,14]
+
+
+[i=200:] Ground Truth:      rectangle   triangle       disk       oval
+[i=200:] Predicted Labels:       star   triangle       disk       disk
+                    gt_bb:  [1,0,9,7]
+                  pred_bb:  [4,3,13,11]
+                    gt_bb:  [0,5,28,29]
+                  pred_bb:  [1,3,28,28]
+                    gt_bb:  [10,9,22,21]
+                  pred_bb:  [8,8,22,20]
+                    gt_bb:  [9,6,31,24]
+                  pred_bb:  [8,5,30,25]
+
+
+Prediction accuracy for rectangle : 43 %
+Prediction accuracy for triangle : 82 %
+Prediction accuracy for  disk : 87 %
+Prediction accuracy for  oval : 54 %
+Prediction accuracy for  star : 73 %
+
+
+
+Overall accuracy of the network on the 1000 test images: 68 %
+
+
+Displaying the confusion matrix:
+
+                      rectangle       triangle           disk           oval           star
+
+   rectangle:            43.50           6.00           7.50          30.50          12.50
+    triangle:             5.00          82.00          12.50           0.00           0.50
+        disk:             2.00           1.00          87.50           5.00           4.50
+        oval:            30.50           0.50           8.50          54.50           6.00
+        star:             5.00           3.50           8.50          10.00          73.00
+
+ testing on testdataloader_3 
+
+
+ predicted noise level 50 percent and actual = 3 
+
+
+ ... training for depth 128 .... 
+
+                    gt_bb:  [4,0,15,12]
+                  pred_bb:  [5,3,18,15]
+                    gt_bb:  [0,7,9,18]
+                  pred_bb:  [6,4,20,17]
+                    gt_bb:  [2,4,26,29]
+                  pred_bb:  [9,6,29,25]
+                    gt_bb:  [12,2,30,16]
+                  pred_bb:  [9,4,26,21]
+
+[epoch:1, iteration:  500]  loss_labeling: 1.768  loss_regression: 83.981  
+                    gt_bb:  [4,3,19,17]
+                  pred_bb:  [3,0,18,16]
+                    gt_bb:  [1,8,23,30]
+                  pred_bb:  [2,8,24,29]
+                    gt_bb:  [6,2,22,18]
+                  pred_bb:  [3,0,21,19]
+                    gt_bb:  [20,13,31,27]
+                  pred_bb:  [18,13,31,26]
+
+[epoch:1, iteration: 1000]  loss_labeling: 1.474  loss_regression: 14.867  
+                    gt_bb:  [14,9,31,23]
+                  pred_bb:  [16,10,31,24]
+                    gt_bb:  [0,1,28,31]
+                  pred_bb:  [2,2,24,24]
+                    gt_bb:  [9,0,14,9]
+                  pred_bb:  [7,1,17,11]
+                    gt_bb:  [15,2,21,16]
+                  pred_bb:  [12,2,23,14]
+
+[epoch:1, iteration: 1500]  loss_labeling: 1.323  loss_regression: 8.940  
+                    gt_bb:  [14,10,19,18]
+                  pred_bb:  [9,5,22,17]
+                    gt_bb:  [9,0,18,12]
+                  pred_bb:  [6,0,20,13]
+                    gt_bb:  [7,3,27,21]
+                  pred_bb:  [8,0,27,20]
+                    gt_bb:  [0,13,12,26]
+                  pred_bb:  [0,8,16,24]
+
+[epoch:1, iteration: 2000]  loss_labeling: 1.233  loss_regression: 7.050  
+                    gt_bb:  [4,10,22,27]
+                  pred_bb:  [2,10,21,28]
+                    gt_bb:  [6,0,31,25]
+                  pred_bb:  [8,3,29,24]
+                    gt_bb:  [4,11,20,26]
+                  pred_bb:  [2,10,18,26]
+                    gt_bb:  [4,5,26,27]
+                  pred_bb:  [2,3,25,27]
+
+[epoch:1, iteration: 2500]  loss_labeling: 1.171  loss_regression: 5.918  
+                    gt_bb:  [15,10,27,22]
+                  pred_bb:  [11,8,26,22]
+                    gt_bb:  [11,3,27,21]
+                  pred_bb:  [9,0,27,20]
+                    gt_bb:  [12,7,19,13]
+                  pred_bb:  [9,4,20,15]
+                    gt_bb:  [2,0,31,26]
+                  pred_bb:  [2,0,28,25]
+
+[epoch:2, iteration:  500]  loss_labeling: 1.074  loss_regression: 5.165  
+                    gt_bb:  [1,0,15,13]
+                  pred_bb:  [3,0,17,14]
+                    gt_bb:  [21,15,31,24]
+                  pred_bb:  [21,14,30,22]
+                    gt_bb:  [11,8,21,18]
+                  pred_bb:  [8,5,22,18]
+                    gt_bb:  [11,8,21,16]
+                  pred_bb:  [11,6,22,16]
+
+[epoch:2, iteration: 1000]  loss_labeling: 1.051  loss_regression: 4.351  
+                    gt_bb:  [11,5,29,23]
+                  pred_bb:  [9,2,30,23]
+                    gt_bb:  [11,2,23,17]
+                  pred_bb:  [12,5,22,16]
+                    gt_bb:  [20,9,30,19]
+                  pred_bb:  [15,8,27,17]
+                    gt_bb:  [6,1,16,10]
+                  pred_bb:  [5,0,15,9]
+
+[epoch:2, iteration: 1500]  loss_labeling: 1.001  loss_regression: 4.090  
+                    gt_bb:  [8,5,21,8]
+                  pred_bb:  [6,1,19,14]
+                    gt_bb:  [1,11,10,21]
+                  pred_bb:  [0,10,13,22]
+                    gt_bb:  [12,9,31,20]
+                  pred_bb:  [12,7,27,20]
+                    gt_bb:  [11,0,21,17]
+                  pred_bb:  [10,1,23,16]
+
+[epoch:2, iteration: 2000]  loss_labeling: 0.995  loss_regression: 3.881  
+                    gt_bb:  [6,9,21,24]
+                  pred_bb:  [7,10,18,20]
+                    gt_bb:  [2,2,16,16]
+                  pred_bb:  [0,1,15,15]
+                    gt_bb:  [8,9,22,23]
+                  pred_bb:  [4,7,22,25]
+                    gt_bb:  [0,9,13,22]
+                  pred_bb:  [0,9,12,21]
+
+[epoch:2, iteration: 2500]  loss_labeling: 0.951  loss_regression: 3.366  
+
+Finished Training
+
+
+
+[i=0:] Ground Truth:      rectangle   triangle       disk       oval
+[i=0:] Predicted Labels:       star   triangle       disk       oval
+                    gt_bb:  [12,7,18,15]
+                  pred_bb:  [8,5,20,16]
+                    gt_bb:  [0,1,21,24]
+                  pred_bb:  [2,3,21,23]
+                    gt_bb:  [8,16,22,30]
+                  pred_bb:  [7,17,21,31]
+                    gt_bb:  [13,8,24,14]
+                  pred_bb:  [12,7,25,17]
+
+
+[i=50:] Ground Truth:      rectangle   triangle       disk       oval
+[i=50:] Predicted Labels:       oval       disk       disk       oval
+                    gt_bb:  [15,9,29,25]
+                  pred_bb:  [13,8,28,22]
+                    gt_bb:  [3,6,26,29]
+                  pred_bb:  [3,9,26,31]
+                    gt_bb:  [2,8,16,22]
+                  pred_bb:  [0,7,16,22]
+                    gt_bb:  [12,7,31,18]
+                  pred_bb:  [12,6,29,19]
+
+
+[i=100:] Ground Truth:      rectangle   triangle       disk       oval
+[i=100:] Predicted Labels:       oval   triangle       star       oval
+                    gt_bb:  [13,13,26,19]
+                  pred_bb:  [13,10,26,22]
+                    gt_bb:  [4,1,27,29]
+                  pred_bb:  [1,1,28,29]
+                    gt_bb:  [3,6,13,16]
+                  pred_bb:  [2,6,14,16]
+                    gt_bb:  [12,2,28,16]
+                  pred_bb:  [10,1,27,17]
+
+
+[i=150:] Ground Truth:      rectangle   triangle       disk       oval
+[i=150:] Predicted Labels:   triangle   triangle       star  rectangle
+                    gt_bb:  [4,0,31,25]
+                  pred_bb:  [3,1,29,27]
+                    gt_bb:  [3,2,30,26]
+                  pred_bb:  [3,1,31,28]
+                    gt_bb:  [10,6,20,16]
+                  pred_bb:  [8,6,20,16]
+                    gt_bb:  [10,0,14,9]
+                  pred_bb:  [11,7,16,12]
+
+
+[i=200:] Ground Truth:      rectangle   triangle       disk       oval
+[i=200:] Predicted Labels:       oval  rectangle       disk       oval
+                    gt_bb:  [12,10,18,16]
+                  pred_bb:  [10,8,20,16]
+                    gt_bb:  [2,0,28,20]
+                  pred_bb:  [5,0,28,22]
+                    gt_bb:  [14,5,31,23]
+                  pred_bb:  [11,4,31,22]
+                    gt_bb:  [16,3,31,16]
+                  pred_bb:  [14,3,30,17]
+
+
+Prediction accuracy for rectangle : 15 %
+Prediction accuracy for triangle : 82 %
+Prediction accuracy for  disk : 64 %
+Prediction accuracy for  oval : 76 %
+Prediction accuracy for  star : 83 %
+
+
+
+Overall accuracy of the network on the 1000 test images: 64 %
+
+
+Displaying the confusion matrix:
+
+                      rectangle       triangle           disk           oval           star
+
+   rectangle:            15.50           7.00           8.00          55.50          14.00
+    triangle:             3.00          82.50           8.50           1.50           4.50
+        disk:             3.00          10.00          64.00          11.50          11.50
+        oval:            10.00           1.00           6.50          76.50           6.00
+        star:             1.00           3.00           2.00          10.50          83.50
+
+ testing on testdataloader_4 
+
+
+ predicted noise level 80 percent and actual = 4 
+
+
+ ... training for depth 256 .... 
+
+                    gt_bb:  [0,8,7,19]
+                  pred_bb:  [6,4,21,18]
+                    gt_bb:  [2,7,22,30]
+                  pred_bb:  [8,6,28,25]
+                    gt_bb:  [9,2,29,25]
+                  pred_bb:  [7,5,25,22]
+                    gt_bb:  [19,16,29,27]
+                  pred_bb:  [8,5,26,23]
+
+[epoch:1, iteration:  500]  loss_labeling: 1.757  loss_regression: 86.358  
+                    gt_bb:  [8,0,21,12]
+                  pred_bb:  [8,3,20,14]
+                    gt_bb:  [4,1,26,28]
+                  pred_bb:  [5,4,25,24]
+                    gt_bb:  [0,3,28,31]
+                  pred_bb:  [3,7,23,27]
+                    gt_bb:  [6,5,29,30]
+                  pred_bb:  [7,8,26,26]
+
+[epoch:1, iteration: 1000]  loss_labeling: 1.518  loss_regression: 18.875  
+                    gt_bb:  [8,2,20,14]
+                  pred_bb:  [8,0,21,13]
+                    gt_bb:  [4,3,21,20]
+                  pred_bb:  [5,1,22,19]
+                    gt_bb:  [18,12,29,26]
+                  pred_bb:  [15,13,28,24]
+                    gt_bb:  [3,4,19,20]
+                  pred_bb:  [1,1,18,18]
+
+[epoch:1, iteration: 1500]  loss_labeling: 1.412  loss_regression: 9.902  
+                    gt_bb:  [13,7,31,14]
+                  pred_bb:  [11,5,21,15]
+                    gt_bb:  [0,12,16,26]
+                  pred_bb:  [0,9,19,28]
+                    gt_bb:  [8,0,25,13]
+                  pred_bb:  [8,0,21,13]
+                    gt_bb:  [8,0,23,13]
+                  pred_bb:  [9,0,22,14]
+
+[epoch:1, iteration: 2000]  loss_labeling: 1.333  loss_regression: 8.543  
+                    gt_bb:  [18,15,31,24]
+                  pred_bb:  [20,16,29,24]
+                    gt_bb:  [13,9,29,19]
+                  pred_bb:  [13,6,29,20]
+                    gt_bb:  [0,2,20,29]
+                  pred_bb:  [2,3,23,24]
+                    gt_bb:  [14,0,26,20]
+                  pred_bb:  [13,1,28,18]
+
+[epoch:1, iteration: 2500]  loss_labeling: 1.278  loss_regression: 7.778  
+                    gt_bb:  [12,10,21,19]
+                  pred_bb:  [10,6,22,18]
+                    gt_bb:  [2,6,28,29]
+                  pred_bb:  [3,4,28,30]
+                    gt_bb:  [1,6,23,28]
+                  pred_bb:  [1,6,23,28]
+                    gt_bb:  [24,23,31,27]
+                  pred_bb:  [12,11,19,16]
+
+[epoch:2, iteration:  500]  loss_labeling: 1.211  loss_regression: 6.362  
+                    gt_bb:  [14,5,31,19]
+                  pred_bb:  [14,6,30,19]
+                    gt_bb:  [16,8,17,16]
+                  pred_bb:  [11,4,19,12]
+                    gt_bb:  [2,1,16,15]
+                  pred_bb:  [4,3,20,18]
+                    gt_bb:  [16,4,31,18]
+                  pred_bb:  [13,4,29,17]
+
+[epoch:2, iteration: 1000]  loss_labeling: 1.170  loss_regression: 6.001  
+                    gt_bb:  [0,12,13,24]
+                  pred_bb:  [2,10,14,23]
+                    gt_bb:  [13,12,31,30]
+                  pred_bb:  [8,8,29,27]
+                    gt_bb:  [12,7,31,21]
+                  pred_bb:  [14,8,30,21]
+                    gt_bb:  [11,9,31,29]
+                  pred_bb:  [10,8,30,28]
+
+[epoch:2, iteration: 1500]  loss_labeling: 1.127  loss_regression: 5.436  
+                    gt_bb:  [4,1,31,29]
+                  pred_bb:  [3,0,31,28]
+                    gt_bb:  [2,12,19,29]
+                  pred_bb:  [2,12,17,27]
+                    gt_bb:  [11,7,30,18]
+                  pred_bb:  [11,4,29,19]
+                    gt_bb:  [13,9,25,16]
+                  pred_bb:  [14,7,24,17]
+
+[epoch:2, iteration: 2000]  loss_labeling: 1.101  loss_regression: 4.835  
+                    gt_bb:  [13,15,29,31]
+                  pred_bb:  [15,15,29,29]
+                    gt_bb:  [2,9,22,27]
+                  pred_bb:  [3,8,20,25]
+                    gt_bb:  [5,0,13,11]
+                  pred_bb:  [4,2,13,10]
+                    gt_bb:  [9,0,25,15]
+                  pred_bb:  [10,1,22,15]
+
+[epoch:2, iteration: 2500]  loss_labeling: 1.056  loss_regression: 4.708  
+
+Finished Training
+
+
+
+[i=0:] Ground Truth:      rectangle   triangle       disk       oval
+[i=0:] Predicted Labels:       disk   triangle       star       disk
+                    gt_bb:  [14,9,19,15]
+                  pred_bb:  [14,10,21,15]
+                    gt_bb:  [0,1,29,28]
+                  pred_bb:  [0,4,26,31]
+                    gt_bb:  [3,17,13,27]
+                  pred_bb:  [5,13,16,24]
+                    gt_bb:  [11,0,21,14]
+                  pred_bb:  [10,1,21,13]
+
+
+[i=50:] Ground Truth:      rectangle   triangle       disk       oval
+[i=50:] Predicted Labels:       star       disk  rectangle       oval
+                    gt_bb:  [5,1,13,10]
+                  pred_bb:  [4,1,13,10]
+                    gt_bb:  [7,2,29,31]
+                  pred_bb:  [7,4,27,27]
+                    gt_bb:  [8,1,26,19]
+                  pred_bb:  [7,1,25,20]
+                    gt_bb:  [13,11,25,15]
+                  pred_bb:  [14,9,24,18]
+
+
+[i=100:] Ground Truth:      rectangle   triangle       disk       oval
+[i=100:] Predicted Labels:       disk   triangle       oval  rectangle
+                    gt_bb:  [2,0,5,3]
+                  pred_bb:  [8,10,16,17]
+                    gt_bb:  [0,6,27,30]
+                  pred_bb:  [1,5,26,30]
+                    gt_bb:  [20,5,30,15]
+                  pred_bb:  [16,5,29,15]
+                    gt_bb:  [12,7,31,21]
+                  pred_bb:  [13,8,29,20]
+
+
+[i=150:] Ground Truth:      rectangle   triangle       disk       oval
+[i=150:] Predicted Labels:       star   triangle       star       oval
+                    gt_bb:  [4,3,9,9]
+                  pred_bb:  [2,2,12,11]
+                    gt_bb:  [3,1,31,27]
+                  pred_bb:  [3,2,27,26]
+                    gt_bb:  [1,4,13,16]
+                  pred_bb:  [0,4,13,15]
+                    gt_bb:  [18,11,31,22]
+                  pred_bb:  [16,12,29,22]
+
+
+[i=200:] Ground Truth:      rectangle   triangle       disk       oval
+[i=200:] Predicted Labels:       star   triangle       disk  rectangle
+                    gt_bb:  [7,3,13,10]
+                  pred_bb:  [4,2,13,10]
+                    gt_bb:  [7,2,31,27]
+                  pred_bb:  [6,2,28,26]
+                    gt_bb:  [14,8,31,26]
+                  pred_bb:  [19,13,31,27]
+                    gt_bb:  [5,0,25,21]
+                  pred_bb:  [5,1,24,21]
+
+
+Prediction accuracy for rectangle : 24 %
+Prediction accuracy for triangle : 82 %
+Prediction accuracy for  disk : 70 %
+Prediction accuracy for  oval : 49 %
+Prediction accuracy for  star : 65 %
+
+
+
+Overall accuracy of the network on the 1000 test images: 58 %
+
+
+Displaying the confusion matrix:
+
+                      rectangle       triangle           disk           oval           star
+
+   rectangle:            24.00           8.00          22.00          33.50          12.50
+    triangle:             7.00          82.00           9.50           1.00           0.50
+        disk:             8.00           4.00          70.00          11.50           6.50
+        oval:            23.00           2.50          16.50          49.00           9.00
+        star:             8.00           2.00          11.50          13.50          65.00

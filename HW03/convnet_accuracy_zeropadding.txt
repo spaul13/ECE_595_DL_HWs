@@ -1,0 +1,322 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:1, batch: 2000] loss: 1.846
+
+[epoch:1, batch: 4000] loss: 1.447
+
+[epoch:1, batch: 6000] loss: 1.323
+
+[epoch:1, batch: 8000] loss: 1.209
+
+[epoch:1, batch:10000] loss: 1.144
+
+[epoch:1, batch:12000] loss: 1.068
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:2, batch: 2000] loss: 0.956
+
+[epoch:2, batch: 4000] loss: 0.924
+
+[epoch:2, batch: 6000] loss: 0.885
+
+[epoch:2, batch: 8000] loss: 0.860
+
+[epoch:2, batch:10000] loss: 0.850
+
+[epoch:2, batch:12000] loss: 0.828
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:3, batch: 2000] loss: 0.642
+
+[epoch:3, batch: 4000] loss: 0.686
+
+[epoch:3, batch: 6000] loss: 0.662
+
+[epoch:3, batch: 8000] loss: 0.670
+
+[epoch:3, batch:10000] loss: 0.645
+
+[epoch:3, batch:12000] loss: 0.637
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:4, batch: 2000] loss: 0.437
+
+[epoch:4, batch: 4000] loss: 0.459
+
+[epoch:4, batch: 6000] loss: 0.469
+
+[epoch:4, batch: 8000] loss: 0.453
+
+[epoch:4, batch:10000] loss: 0.470
+
+[epoch:4, batch:12000] loss: 0.490
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:5, batch: 2000] loss: 0.243
+
+[epoch:5, batch: 4000] loss: 0.260
+
+[epoch:5, batch: 6000] loss: 0.269
+
+[epoch:5, batch: 8000] loss: 0.282
+
+[epoch:5, batch:10000] loss: 0.292
+
+[epoch:5, batch:12000] loss: 0.309
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:6, batch: 2000] loss: 0.110
+
+[epoch:6, batch: 4000] loss: 0.129
+
+[epoch:6, batch: 6000] loss: 0.133
+
+[epoch:6, batch: 8000] loss: 0.153
+
+[epoch:6, batch:10000] loss: 0.161
+
+[epoch:6, batch:12000] loss: 0.157
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:7, batch: 2000] loss: 0.059
+
+[epoch:7, batch: 4000] loss: 0.059
+
+[epoch:7, batch: 6000] loss: 0.073
+
+[epoch:7, batch: 8000] loss: 0.069
+
+[epoch:7, batch:10000] loss: 0.092
+
+[epoch:7, batch:12000] loss: 0.093
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:8, batch: 2000] loss: 0.037
+
+[epoch:8, batch: 4000] loss: 0.027
+
+[epoch:8, batch: 6000] loss: 0.032
+
+[epoch:8, batch: 8000] loss: 0.050
+
+[epoch:8, batch:10000] loss: 0.057
+
+[epoch:8, batch:12000] loss: 0.068
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:9, batch: 2000] loss: 0.023
+
+[epoch:9, batch: 4000] loss: 0.021
+
+[epoch:9, batch: 6000] loss: 0.017
+
+[epoch:9, batch: 8000] loss: 0.032
+
+[epoch:9, batch:10000] loss: 0.036
+
+[epoch:9, batch:12000] loss: 0.040
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:10, batch: 2000] loss: 0.023
+
+[epoch:10, batch: 4000] loss: 0.019
+
+[epoch:10, batch: 6000] loss: 0.028
+
+[epoch:10, batch: 8000] loss: 0.024
+
+[epoch:10, batch:10000] loss: 0.026
+
+[epoch:10, batch:12000] loss: 0.020
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:11, batch: 2000] loss: 0.018
+
+[epoch:11, batch: 4000] loss: 0.014
+
+[epoch:11, batch: 6000] loss: 0.013
+
+[epoch:11, batch: 8000] loss: 0.014
+
+[epoch:11, batch:10000] loss: 0.012
+
+[epoch:11, batch:12000] loss: 0.020
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:12, batch: 2000] loss: 0.011
+
+[epoch:12, batch: 4000] loss: 0.011
+
+[epoch:12, batch: 6000] loss: 0.019
+
+[epoch:12, batch: 8000] loss: 0.015
+
+[epoch:12, batch:10000] loss: 0.008
+
+[epoch:12, batch:12000] loss: 0.008
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:13, batch: 2000] loss: 0.004
+
+[epoch:13, batch: 4000] loss: 0.003
+
+[epoch:13, batch: 6000] loss: 0.002
+
+[epoch:13, batch: 8000] loss: 0.003
+
+[epoch:13, batch:10000] loss: 0.003
+
+[epoch:13, batch:12000] loss: 0.008
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:14, batch: 2000] loss: 0.005
+
+[epoch:14, batch: 4000] loss: 0.003
+
+[epoch:14, batch: 6000] loss: 0.002
+
+[epoch:14, batch: 8000] loss: 0.001
+
+[epoch:14, batch:10000] loss: 0.001
+
+[epoch:14, batch:12000] loss: 0.004
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:15, batch: 2000] loss: 0.014
+
+[epoch:15, batch: 4000] loss: 0.005
+
+[epoch:15, batch: 6000] loss: 0.010
+
+[epoch:15, batch: 8000] loss: 0.004
+
+[epoch:15, batch:10000] loss: 0.005
+
+[epoch:15, batch:12000] loss: 0.004
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:16, batch: 2000] loss: 0.002
+
+[epoch:16, batch: 4000] loss: 0.001
+
+[epoch:16, batch: 6000] loss: 0.001
+
+[epoch:16, batch: 8000] loss: 0.004
+
+[epoch:16, batch:10000] loss: 0.001
+
+[epoch:16, batch:12000] loss: 0.001
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:17, batch: 2000] loss: 0.000
+
+[epoch:17, batch: 4000] loss: 0.000
+
+[epoch:17, batch: 6000] loss: 0.000
+
+[epoch:17, batch: 8000] loss: 0.000
+
+[epoch:17, batch:10000] loss: 0.000
+
+[epoch:17, batch:12000] loss: 0.000
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:18, batch: 2000] loss: 0.000
+
+[epoch:18, batch: 4000] loss: 0.000
+
+[epoch:18, batch: 6000] loss: 0.000
+
+[epoch:18, batch: 8000] loss: 0.000
+
+[epoch:18, batch:10000] loss: 0.000
+
+[epoch:18, batch:12000] loss: 0.000
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:19, batch: 2000] loss: 0.000
+
+[epoch:19, batch: 4000] loss: 0.000
+
+[epoch:19, batch: 6000] loss: 0.000
+
+[epoch:19, batch: 8000] loss: 0.000
+
+[epoch:19, batch:10000] loss: 0.000
+
+[epoch:19, batch:12000] loss: 0.000
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+
+[epoch:20, batch: 2000] loss: 0.000
+
+[epoch:20, batch: 4000] loss: 0.000
+
+[epoch:20, batch: 6000] loss: 0.000
+
+[epoch:20, batch: 8000] loss: 0.000
+
+[epoch:20, batch:10000] loss: 0.000
+
+[epoch:20, batch:12000] loss: 0.000

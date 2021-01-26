@@ -1,0 +1,83 @@
++Task1:
+[epoch:1  iter: 100  elapsed_time:  49 secs]     loss: 0.709
+[epoch:1  iter: 200  elapsed_time: 100 secs]     loss: 0.699
+[epoch:1  iter: 300  elapsed_time: 164 secs]     loss: 0.701
+[epoch:1  iter: 400  elapsed_time: 227 secs]     loss: 0.706
+[epoch:1  iter: 500  elapsed_time: 275 secs]     loss: 0.711
+[epoch:1  iter: 600  elapsed_time: 325 secs]     loss: 0.694
+[epoch:1  iter: 700  elapsed_time: 378 secs]     loss: 0.703
+[epoch:1  iter: 800  elapsed_time: 431 secs]     loss: 0.704
+[epoch:1  iter: 900  elapsed_time: 489 secs]     loss: 0.690
+[epoch:1  iter:1000  elapsed_time: 542 secs]     loss: 0.695
+[epoch:1  iter:1100  elapsed_time: 580 secs]     loss: 0.708
+[epoch:1  iter:1200  elapsed_time: 627 secs]     loss: 0.704
+[epoch:1  iter:1300  elapsed_time: 678 secs]     loss: 0.695
+[epoch:1  iter:1400  elapsed_time: 720 secs]     loss: 0.707
+[epoch:1  iter:1500  elapsed_time: 775 secs]     loss: 0.701
+[epoch:2  iter: 100  elapsed_time:  57 secs]     loss: 0.686
+[epoch:2  iter: 200  elapsed_time: 116 secs]     loss: 0.709
+[epoch:2  iter: 300  elapsed_time: 180 secs]     loss: 0.707
+[epoch:2  iter: 400  elapsed_time: 243 secs]     loss: 0.701
+[epoch:2  iter: 500  elapsed_time: 320 secs]     loss: 0.697
+[epoch:2  iter: 600  elapsed_time: 376 secs]     loss: 0.697
+[epoch:2  iter: 700  elapsed_time: 430 secs]     loss: 0.713
+[epoch:2  iter: 800  elapsed_time: 485 secs]     loss: 0.701
+[epoch:2  iter: 900  elapsed_time: 542 secs]     loss: 0.699
+[epoch:2  iter:1000  elapsed_time: 600 secs]     loss: 0.695
+[epoch:2  iter:1100  elapsed_time: 661 secs]     loss: 0.702
+[epoch:2  iter:1200  elapsed_time: 717 secs]     loss: 0.704
+[epoch:2  iter:1300  elapsed_time: 774 secs]     loss: 0.696
+[epoch:2  iter:1400  elapsed_time: 834 secs]     loss: 0.691
+[epoch:2  iter:1500  elapsed_time: 901 secs]     loss: 0.714
+                      predicted negative    predicted positive
+
+true negative:              96.923             3.077
+true positive:                96.5               3.5
+
++Task2:
+[epoch:1  iter: 100  elapsed_time:   32 secs]     loss: 23.107
+[epoch:1  iter: 200  elapsed_time:   55 secs]     loss: 0.888
+[epoch:1  iter: 300  elapsed_time:   80 secs]     loss: 0.774
+[epoch:1  iter: 400  elapsed_time:  103 secs]     loss: 1.208
+[epoch:1  iter: 500  elapsed_time:  130 secs]     loss: 0.717
+[epoch:1  iter: 600  elapsed_time:  158 secs]     loss: 0.704
+[epoch:1  iter: 700  elapsed_time:  186 secs]     loss: 0.739
+[epoch:1  iter: 800  elapsed_time:  217 secs]     loss: 0.704
+[epoch:1  iter: 900  elapsed_time:  246 secs]     loss: 0.693
+[epoch:1  iter:1000  elapsed_time:  274 secs]     loss: 0.709
+[epoch:1  iter:1100  elapsed_time:  307 secs]     loss: 0.692
+[epoch:1  iter:1200  elapsed_time:  330 secs]     loss: 0.694
+[epoch:1  iter:1300  elapsed_time:  356 secs]     loss: 0.700
+[epoch:1  iter:1400  elapsed_time:  384 secs]     loss: 0.696
+[epoch:1  iter:1500  elapsed_time:  415 secs]     loss: 0.685
+[epoch:2  iter: 100  elapsed_time:  467 secs]     loss: 0.692
+[epoch:2  iter: 200  elapsed_time:  494 secs]     loss: 0.692
+[epoch:2  iter: 300  elapsed_time:  522 secs]     loss: 0.694
+[epoch:2  iter: 400  elapsed_time:  549 secs]     loss: 0.693
+[epoch:2  iter: 500  elapsed_time:  583 secs]     loss: 0.689
+[epoch:2  iter: 600  elapsed_time:  608 secs]     loss: 0.694
+[epoch:2  iter: 700  elapsed_time:  631 secs]     loss: 0.692
+[epoch:2  iter: 800  elapsed_time:  653 secs]     loss: 0.689
+[epoch:2  iter: 900  elapsed_time:  679 secs]     loss: 0.695
+[epoch:2  iter:1000  elapsed_time:  704 secs]     loss: 0.716
+[epoch:2  iter:1100  elapsed_time:  736 secs]     loss: 0.693
+[epoch:2  iter:1200  elapsed_time:  763 secs]     loss: 0.699
+[epoch:2  iter:1300  elapsed_time:  786 secs]     loss: 0.688
+[epoch:2  iter:1400  elapsed_time:  816 secs]     loss: 0.693
+[epoch:2  iter:1500  elapsed_time:  847 secs]     loss: 0.700
+                     predicted negative    predicted positive
+
+true negative:               3.077            96.923
+true positive:                 2.0              98.0
+
++Task3:
+[epoch:1  iter: 100  elapsed_time: 117 secs]     loss: 0.693
+[epoch:1  iter: 200  elapsed_time: 222 secs]     loss: 0.698
+[epoch:1  iter: 300  elapsed_time: 320 secs]     loss: 0.694
+[epoch:2  iter: 100  elapsed_time: 104 secs]     loss: 0.695
+[epoch:2  iter: 200  elapsed_time: 339 secs]     loss: 0.697
+[epoch:2  iter: 300  elapsed_time: 431 secs]     loss: 0.693
+                      predicted negative    predicted positive
+
+true negative:              98.462             1.538
+true positive:                97.5               2.5

@@ -1,0 +1,70 @@
+[epoch=1 iter=500:] Ground Truth:           oval       oval       oval  rectangle
+[epoch=1 iter=500:] Predicted Labels:  rectangle  rectangle  rectangle  rectangle
+                    gt_bb:  [14,6,31,16]
+                  pred_bb:  [7,4,20,16]
+                    gt_bb:  [12,9,31,16]
+                  pred_bb:  [7,4,20,16]
+                    gt_bb:  [10,7,24,17]
+                  pred_bb:  [7,4,20,16]
+                    gt_bb:  [12,7,23,21]
+                  pred_bb:  [7,4,20,16]
+
+[epoch:1, iteration:  500]  loss_labeling: 1.651  loss_regression: 248.531
+
+
+[epoch=1 iter=1000:] Ground Truth:           star  rectangle   triangle  rectangle
+[epoch=1 iter=1000:] Predicted Labels:  rectangle  rectangle  rectangle  rectangle
+                    gt_bb:  [6,5,20,17]
+                  pred_bb:  [8,4,23,19]
+                    gt_bb:  [17,15,29,19]
+                  pred_bb:  [8,4,23,19]
+                    gt_bb:  [5,3,26,30]
+                  pred_bb:  [8,4,23,19]
+                    gt_bb:  [4,0,23,20]
+                  pred_bb:  [8,4,23,19]
+
+[epoch:1, iteration: 1000]  loss_labeling: 1.635  loss_regression: 34.508
+
+
+[epoch=1 iter=1500:] Ground Truth:           star       star   triangle       star
+[epoch=1 iter=1500:] Predicted Labels:       oval       oval       oval       oval
+                    gt_bb:  [10,0,25,11]
+                  pred_bb:  [9,5,26,21]
+                    gt_bb:  [5,9,20,24]
+                  pred_bb:  [9,5,26,21]
+                    gt_bb:  [4,0,27,30]
+                  pred_bb:  [9,5,26,21]
+                    gt_bb:  [3,1,18,17]
+                  pred_bb:  [9,5,26,21]
+
+[epoch:1, iteration: 1500]  loss_labeling: 1.635  loss_regression: 34.010
+
+
+[epoch=1 iter=2000:] Ground Truth:           star   triangle   triangle       oval
+[epoch=1 iter=2000:] Predicted Labels:       star       star       star       star
+                    gt_bb:  [8,0,19,7]
+                  pred_bb:  [7,6,24,22]
+                    gt_bb:  [2,4,23,27]
+                  pred_bb:  [7,6,24,22]
+                    gt_bb:  [2,6,29,30]
+                  pred_bb:  [7,6,24,22]
+                    gt_bb:  [22,17,31,25]
+                  pred_bb:  [7,6,24,22]
+
+[epoch:1, iteration: 2000]  loss_labeling: 1.632  loss_regression: 32.826
+
+
+[epoch=1 iter=2500:] Ground Truth:      rectangle   triangle       oval   triangle
+[epoch=1 iter=2500:] Predicted Labels:       oval       oval       oval       oval
+                    gt_bb:  [10,3,30,23]
+                  pred_bb:  [8,6,24,21]
+                    gt_bb:  [6,0,30,23]
+                  pred_bb:  [8,6,24,21]
+                    gt_bb:  [12,9,31,17]
+                  pred_bb:  [8,6,24,21]
+                    gt_bb:  [0,6,26,28]
+                  pred_bb:  [8,6,24,21]
+
+[epoch:1, iteration: 2500]  loss_labeling: 1.629  loss_regression: 33.475
+
+Finished Training
